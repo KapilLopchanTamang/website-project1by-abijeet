@@ -1,0 +1,139 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    overflow-x: hidden;
+}
+
+#navbar{
+    display: flex;
+    position: sticky;
+    justify-content: flex-end;
+    height: 50px;
+    align-items: center;
+}
+
+#navbar ul{
+    display: flex;
+    list-style: none;
+}
+
+#navbar ul li a{
+    padding-left: 90px;
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    font-size: 25px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+#navbar::before{
+    content: " ";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .6;
+}
+#contact{
+    padding-right: 150px;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 639px;
+    margin-top: 150px;
+}
+#home::before{
+    content: "";
+    background: url('../images/bg.jpg') no-repeat center center/cover;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+#home h1, h2, h3, h4{
+    font-size: 75px;
+    color: white;
+    font-family: 'Baloo Bhai 2', cursive;
+    text-align: center;
+}
+
+.border{
+    border: 2px solid black;
+    background-color: black;
+}
+
+/* how we work */
+.bef_container{
+    position: relative;
+    top: 130px;
+    background-color: #bfa987;
+    text-align: center;
+}
+.container{
+    position: relative;
+    top: 130px;
+    background-color: #bfa987;
+    display: flex;
+    height: 570px;
+}
+
+.container h3{
+    color: black;
+}
+
+/* form the location permission */
+
+.bdr{
+    border: 2px solid black;
+    height: 530px;
+    width: 430px;
+    margin: auto;
+    border-radius: 80px;
+    
+}
+
+.text_inside_border{
+    font-size: 25px;
+    padding: 30px;
+    text-align: center;
+    font-family: 'Baloo Bhai 2', cursive;
+
+}
+.container div img{
+    width: 140px;
+    height: 150px;
+    margin: auto;
+}
+.container div #rating{
+    width: 400px;
+    height: 165px;
+}
+.container div #search{
+    position: relative;
+    width: 157px;
+    height: 158px;
+    transform: rotate(350deg);
+    top: 18px;
+}
+
+.container div #search, .container div #location{
+    margin-left: 150px;
+}
+
+/* for the copyright */
+#copyright{
+    position: relative;
+    top: 130px;
+    background-color: black;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+}

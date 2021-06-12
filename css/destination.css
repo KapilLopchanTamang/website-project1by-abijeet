@@ -1,0 +1,140 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    overflow: hidden;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+#navbar{
+    display: flex;
+    position: sticky;
+    justify-content: flex-end;
+    height: 50px;
+    align-items: center;
+}
+
+#navbar ul{
+    display: flex;
+    list-style: none;
+}
+
+#navbar ul li a{
+    padding-left: 90px;
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    font-size: 25px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+#navbar::before{
+    content: " ";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .6;
+}
+#contact{
+    padding-right: 150px;
+}
+
+/* for the destination section */
+.text{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+.text::before{
+    content: "";
+    background: url(../images/way.jpg) no-repeat center center/ cover;
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.location{
+    display: flex;
+    color: white;
+    text-align: center;
+    /* border: 2px solid black; */
+    width: 450px;
+    height: 500px;
+    margin: auto;
+    position: relative;
+    top: 150px;
+}
+.location::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: .6;
+    z-index: -1;
+    border-radius: 135px;
+}
+.your_locattion{
+    display: flex;
+    flex-direction: column;
+    margin: 35px;
+    font-family: 'Baloo Bhai 2', cursive;
+
+}
+
+.after_location{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.input{
+    outline: none;
+    background-color: transparent;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    width: 350px;
+    color: white;
+    text-align: center;
+    border-radius: 135px;
+    margin: 15px;
+    font-size: 25px;
+}
+.input::placeholder{
+    text-align: center;
+    color: white;
+}
+
+#submit{
+    position: relative;
+    bottom: 60px;
+    width: 250px;
+    border-radius: 10px;
+    margin: auto;
+    background-color: rgb(179, 167, 167) ;
+    color: white;
+    font-family: 'Baloo Bhai 2', cursive;
+    height: 40px;
+}
+#submit:hover{
+    cursor: pointer;
+}
+
+.cont{
+    color: white;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 60px;
+    position: relative;
+    top: 100px;
+}
+
+.label
+{
+    font-size: 30px;
+}
